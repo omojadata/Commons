@@ -8,11 +8,11 @@ plugins {
     `maven-publish`
 }
 
-group = "org.fossify"
+group = "org.omojadata"
 version = "1.0.0"
 
 android {
-    namespace = "org.fossify.commons"
+    namespace = "org.omojadata.commons"
 
     compileSdk = libs.versions.app.build.compileSDKVersion.get().toInt()
 

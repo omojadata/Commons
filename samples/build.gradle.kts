@@ -15,12 +15,12 @@ if (keystorePropertiesFile.exists()) {
 }
 
 android {
-    namespace = "org.fossify.commons.samples"
+    namespace = "org.omojadata.commons.samples"
 
     compileSdk = libs.versions.app.build.compileSDKVersion.get().toInt()
 
     defaultConfig {
-        applicationId = "org.fossify.commons.samples"
+        applicationId = "org.omojadata.commons.samples"
         minSdk = libs.versions.app.build.minimumSDK.get().toInt()
         targetSdk = libs.versions.app.build.targetSDK.get().toInt()
         versionCode = 1
@@ -54,7 +54,7 @@ android {
 
     flavorDimensions.add("variants")
     productFlavors {
-        register("foss")
+        register("omoja")
         register("prepaid")
     }
 
