@@ -26,6 +26,8 @@ import org.omojadata.commons.compose.theme.AppThemeSurface
 import org.omojadata.commons.dialogs.*
 import org.omojadata.commons.extensions.*
 import org.omojadata.commons.models.*
+import org.omojadata.commons.R
+
 
 class TestDialogActivity : ComponentActivity() {
 

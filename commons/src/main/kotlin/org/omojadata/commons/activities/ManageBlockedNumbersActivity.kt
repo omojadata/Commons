@@ -35,6 +35,8 @@ import org.omojadata.commons.helpers.*
 import org.omojadata.commons.models.BlockedNumber
 import java.io.FileOutputStream
 import java.io.OutputStream
+import org.omojadata.commons.R
+
 
 class ManageBlockedNumbersActivity : BaseSimpleActivity() {
 
@@ -70,7 +72,7 @@ class ManageBlockedNumbersActivity : BaseSimpleActivity() {
             val isBlockingUnknownNumbers by config.isBlockingUnknownNumbers.collectAsStateWithLifecycle(initialValue = config.blockUnknownNumbers)
             val showCheckmarksOnSwitches by config.showCheckmarksOnSwitchesFlow.collectAsStateWithLifecycle(initialValue = config.showCheckmarksOnSwitches)
             val isDialer = remember {
-                config.appId.startsWith("org.fossify.phone")
+                config.appId.startsWith("org.omojadata.phone")
             }
             val isDefaultDialer: Boolean = onEventValue {
                 context.isDefaultDialer()
@@ -222,7 +224,7 @@ class ManageBlockedNumbersActivity : BaseSimpleActivity() {
     }
 
     private fun maybeSetDefaultCallerIdApp() {
-        if (isQPlus() && baseConfig.appId.startsWith("org.fossify.phone")) {
+        if (isQPlus() && baseConfig.appId.startsWith("org.omojadata.phone")) {
             setDefaultCallerIdApp()
         }
     }

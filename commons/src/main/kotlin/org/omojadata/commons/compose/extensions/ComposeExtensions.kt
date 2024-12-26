@@ -29,6 +29,8 @@ import org.omojadata.commons.compose.theme.SimpleTheme
 import org.omojadata.commons.compose.theme.isLitWell
 import org.omojadata.commons.extensions.darkenColor
 import org.omojadata.commons.extensions.launchViewIntent
+import org.omojadata.commons.R
+
 
 fun Context.getActivity(): Activity {
     return when (this) {

@@ -16,7 +16,6 @@ if (keystorePropertiesFile.exists()) {
 
 android {
     namespace = "org.omojadata.commons.samples"
-
     compileSdk = libs.versions.app.build.compileSDKVersion.get().toInt()
 
     defaultConfig {

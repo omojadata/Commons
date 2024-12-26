@@ -47,6 +47,7 @@ import org.omojadata.commons.extensions.fromHtml
 import org.omojadata.commons.extensions.getAlertDialogBuilder
 import org.omojadata.commons.extensions.humanizePath
 import org.omojadata.commons.extensions.setupDialogStuff
+import org.omojadata.commons.R
 
 class WritePermissionDialog(activity: Activity, val writePermissionDialogMode: WritePermissionDialogMode, val callback: () -> Unit) {
 

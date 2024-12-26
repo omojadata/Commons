@@ -19,6 +19,8 @@ import org.omojadata.commons.compose.theme.AppThemeSurface
 import org.omojadata.commons.compose.theme.SimpleTheme
 import org.omojadata.commons.extensions.fromHtml
 import org.omojadata.commons.models.FAQItem
+import org.omojadata.commons.R
+
 
 @Composable
 internal fun FAQScreen(

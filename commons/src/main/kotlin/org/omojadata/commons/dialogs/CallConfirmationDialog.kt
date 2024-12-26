@@ -34,6 +34,7 @@ import org.omojadata.commons.extensions.applyColorFilter
 import org.omojadata.commons.extensions.getAlertDialogBuilder
 import org.omojadata.commons.extensions.getProperTextColor
 import org.omojadata.commons.extensions.setupDialogStuff
+import org.omojadata.commons.R
 
 class CallConfirmationDialog(val activity: BaseSimpleActivity, val callee: String, private val callback: () -> Unit) {
     private var view = DialogCallConfirmationBinding.inflate(activity.layoutInflater, null, false)

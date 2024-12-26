@@ -19,6 +19,7 @@ import org.omojadata.commons.compose.alert_dialog.*
 import org.omojadata.commons.compose.extensions.MyDevices
 import org.omojadata.commons.compose.theme.AppThemeSurface
 import org.omojadata.commons.models.BlockedNumber
+import org.omojadata.commons.R
 
 @Composable
 fun AddOrEditBlockedNumberAlertDialog(

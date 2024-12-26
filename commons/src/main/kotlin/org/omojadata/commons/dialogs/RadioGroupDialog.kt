@@ -38,6 +38,8 @@ import org.omojadata.commons.extensions.getAlertDialogBuilder
 import org.omojadata.commons.extensions.onGlobalLayout
 import org.omojadata.commons.extensions.setupDialogStuff
 import org.omojadata.commons.models.RadioItem
+import org.omojadata.commons.R
+
 
 class RadioGroupDialog(
     val activity: Activity, val items: ArrayList<RadioItem>, val checkedItemId: Int = -1, val titleId: Int = 0,

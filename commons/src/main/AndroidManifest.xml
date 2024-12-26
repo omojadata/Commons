@@ -57,7 +57,7 @@
             android:configChanges="orientation"
             android:enableOnBackInvokedCallback="true"
             android:exported="false"
-            android:label="@string/manage_blocked_numbers" />
+            android:label="@string/manage_blocked_numbers"/>
 
         <activity
             android:name=".activities.DonationActivity"
