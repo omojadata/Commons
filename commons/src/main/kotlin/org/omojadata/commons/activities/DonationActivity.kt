@@ -38,7 +38,7 @@ class DonationActivity : BaseComposeActivity() {
 internal val FossifyDonationPlatforms = listOf(
     Donation.Platform(
         fee = 0,
-        link = "https://github.com/sponsors/FossifyOrg",
+        link = "https://github.com/sponsors/OmojadataOrg",
         nameRes = R.string.github_sponsors,
         iconRes = R.drawable.ic_github_tinted_vector
     ),

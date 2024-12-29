@@ -218,7 +218,7 @@ class AboutActivity : BaseComposeActivity() {
         val separator = "------------------------------"
         val body = "$appVersion$newline$deviceOS$newline$separator$newline$newline"
 
-        val address = if (packageName.startsWith("org.fossify")) {
+        val address = if (packageName.startsWith("org.omojadata")) {
             getString(R.string.my_email)
         } else {
             getString(R.string.my_fake_email)
