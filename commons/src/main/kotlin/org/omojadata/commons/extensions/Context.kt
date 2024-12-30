@@ -489,7 +489,7 @@ fun Context.getUriMimeType(path: String, newUri: Uri): String {
     return mimeType
 }
 
-fun Context.isThankYouInstalled() = isPackageInstalled("org.fossify.thankyou")
+fun Context.isThankYouInstalled() = isPackageInstalled("org.omojadata.thankyou")
 
 fun Context.canAccessGlobalConfig(): Boolean {
     return isThankYouInstalled() && ContextCompat.checkSelfPermission(this, PERMISSION_WRITE_GLOBAL_SETTINGS) == PERMISSION_GRANTED
@@ -508,7 +508,7 @@ fun Context.isOrWasThankYouInstalled(): Boolean {
     }
 }
 
-fun Context.isAProApp() = packageName.startsWith("org.fossify.") && packageName.removeSuffix(".debug").endsWith(".pro")
+fun Context.isAProApp() = packageName.startsWith("org.omojadata.") && packageName.removeSuffix(".debug").endsWith(".pro")
 
 fun Context.getCustomizeColorsString(): String {
     val textId = if (isOrWasThankYouInstalled()) {
@@ -710,7 +710,7 @@ fun Context.saveExifRotation(exif: ExifInterface, degrees: Int) {
 
 fun Context.getLaunchIntent() = packageManager.getLaunchIntentForPackage(baseConfig.appId)
 
-fun Context.getCanAppBeUpgraded() = proPackages.contains(baseConfig.appId.removeSuffix(".debug").removePrefix("org.fossify."))
+fun Context.getCanAppBeUpgraded() = proPackages.contains(baseConfig.appId.removeSuffix(".debug").removePrefix("org.omojadata."))
 
 fun Context.getProUrl() = "https://play.google.com/store/apps/details?id=${baseConfig.appId.removeSuffix(".debug")}.pro"
 
@@ -1005,9 +1005,9 @@ fun Context.getCornerRadius() = resources.getDimension(R.dimen.rounded_corner_ra
 
 // we need the Default Dialer functionality only in Simple Dialer and in Simple Contacts for now
 fun Context.isDefaultDialer(): Boolean {
-    return if (!packageName.startsWith("org.fossify.contacts") && !packageName.startsWith("org.fossify.phone")) {
+    return if (!packageName.startsWith("org.omojadata.contacts") && !packageName.startsWith("org.omojadata.phone")) {
         true
-    } else if ((packageName.startsWith("org.fossify.contacts") || packageName.startsWith("org.fossify.phone")) && isQPlus()) {
+    } else if ((packageName.startsWith("org.omojadata.contacts") || packageName.startsWith("org.omojadata.phone")) && isQPlus()) {
         val roleManager = getSystemService(RoleManager::class.java)
         roleManager!!.isRoleAvailable(RoleManager.ROLE_DIALER) && roleManager.isRoleHeld(RoleManager.ROLE_DIALER)
     } else {
