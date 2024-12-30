@@ -293,7 +293,7 @@ fun BaseSimpleActivity.showOTGPermissionDialog(path: String) {
 fun Activity.launchPurchaseThankYouIntent() {
     hideKeyboard()
     try {
-        launchViewIntent("market://details?id=org.fossify.thankyou")
+        launchViewIntent("market://details?id=org.omojadata.thankyou")
     } catch (ignored: Exception) {
         launchViewIntent(getString(R.string.thank_you_url))
     }
@@ -507,7 +507,7 @@ fun Activity.openPathIntent(
             setDataAndType(newUri, mimeType)
             addFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION)
 
-            if (applicationId == "org.fossify.gallery" || applicationId == "org.fossify.gallery.debug") {
+            if (applicationId == "org.omojadata.gallery" || applicationId == "org.omojadata.gallery.debug") {
                 putExtra(IS_FROM_GALLERY, true)
             }
 
@@ -550,8 +550,8 @@ fun BaseSimpleActivity.launchCallIntent(recipient: String, handle: PhoneAccountH
             }
 
             if (isDefaultDialer()) {
-                val packageName = if (baseConfig.appId.contains(".debug", true)) "org.fossify.phone.debug" else "org.fossify.phone"
-                val className = "org.fossify.phone.activities.DialerActivity"
+                val packageName = if (baseConfig.appId.contains(".debug", true)) "org.omojadata.phone.debug" else "org.omojadata.phone"
+                val className = "org.omojadata.phone.activities.DialerActivity"
                 setClassName(packageName, className)
             }
 
