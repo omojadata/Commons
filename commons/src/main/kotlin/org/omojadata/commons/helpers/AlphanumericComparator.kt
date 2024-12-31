@@ -2,6 +2,7 @@ package org.omojadata.commons.helpers
 
 // taken from https://gist.github.com/MichaelRocks/1b94bb44c7804e999dbf31dac86955ec
 // make IMG_5.jpg come before IMG_10.jpg
+//fossify
 class AlphanumericComparator {
     fun compare(string1: String, string2: String): Int {
         var thisMarker = 0

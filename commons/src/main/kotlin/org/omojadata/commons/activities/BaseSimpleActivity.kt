@@ -1180,6 +1180,7 @@ abstract class BaseSimpleActivity : AppCompatActivity() {
         return "$appName-settings_${getCurrentFormattedDateTime()}"
     }
 
+
     @SuppressLint("InlinedApi")
     protected fun launchSetDefaultDialerIntent() {
         if (isQPlus()) {
