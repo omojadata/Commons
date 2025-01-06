@@ -503,8 +503,8 @@ fun Context.isOrWasThankYouInstalled(): Boolean {
             baseConfig.hadThankYouInstalled = true
             true
         }
-
-        else -> false
+        else -> true
+//        else -> false
     }
 }
 
